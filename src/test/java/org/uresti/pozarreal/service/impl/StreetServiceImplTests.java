@@ -104,7 +104,7 @@ public class StreetServiceImplTests {
         List<House> houses = new LinkedList<>();
 
 
-        Mockito.when(streetRepository.findById("id1").orElseThrow()).thenReturn(street1);
+        Mockito.when(streetRepository.findById("id1")).thenReturn(Optional.of(street1));
         Mockito.when(representativeRepository.findRepresentativeByStreet("id1")).thenReturn(representative);
         Mockito.when(housesRepository.findAllByStreet("id1")).thenReturn(houses);
 
