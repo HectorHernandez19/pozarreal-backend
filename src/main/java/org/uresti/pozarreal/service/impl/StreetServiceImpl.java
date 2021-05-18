@@ -20,9 +20,7 @@ public class StreetServiceImpl implements StreetsService {
 
     private final HousesRepository housesRepository;
 
-    public StreetServiceImpl(StreetRepository streetRepository,
-                             RepresentativeRepository representativeRepository,
-                             HousesRepository housesRepository) {
+    public StreetServiceImpl(StreetRepository streetRepository, RepresentativeRepository representativeRepository, HousesRepository housesRepository) {
         this.streetRepository = streetRepository;
         this.representativeRepository = representativeRepository;
         this.housesRepository = housesRepository;
